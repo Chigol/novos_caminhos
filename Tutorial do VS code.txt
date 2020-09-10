@@ -74,8 +74,8 @@ Arquivo: /home/iuryprof/Vídeos/Tutorial do VS code Página 2 de 2
  "editor.defaultFormatter": "esbenp.prettier-vscode",
  "editor.formatOnPaste": true,
  "php.validate.run": "onType",
- - () Para configurar o PHP Code Sniffer eu uso as seguintes configurações:
+ - (Ok) Para configurar o PHP Code Sniffer eu uso as seguintes configurações:
  "phpcs.standard": "PSR2",
- "phpcs.executablePath": "/home/giovanni/.config/composer/vendor/bin/phpcs"
+ "phpcs.executablePath": "/usr/bin/phpcs.phar"
  site para download https://squizlabs.github.io/PHP_CodeSniffer/phpcs.phar
-() 07 Settings Sync
+(Ok) 07 Settings Sync
