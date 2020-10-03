@@ -3,7 +3,7 @@ require __DIR__ . '/../framework/config.php';
 PHPClassName('2.7 - Estruturas de repetição');
  
 /*
-*
+* Estruturas de repetição
 */
 PHPClassSession('While, do while', __LINE__);
 
