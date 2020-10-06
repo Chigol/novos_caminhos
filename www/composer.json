@@ -1,0 +1,21 @@
+{
+    "name": "guilherme/v-002",
+    "description": "Curso Programador WEB",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "Guilherme Meireles",
+            "email": "guilherme.meireles92003@gmail.com",
+            "homepage": "https://github.com/GMeireles",
+            "role": "Developer"
+        }
+    ],
+    "config": {
+        "vendor-dir": "vendor"
+    },
+    "autoload": {
+        "psr-4": {
+            "classes\\": "classes/"
+        }
+    }
+}
