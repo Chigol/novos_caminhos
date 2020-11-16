@@ -1,105 +1,113 @@
-<!-- DOCUMENTO HTML 5 -->
 <!DOCTYPE html>
-<!-- INFORMAR A LÍNGUA QUE SERÁ USADA DO SITE -->
 <html lang='pt-br'>
 
 <head>
-
-    <!-- CONJUNTO DE CARACTERES -->
     <meta charset='UTF-8'>
-
-    <!-- VIEWPORT -->
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-
-    <!-- ROBOTS -->
-    <meta nam="robots" content="index, follow">
-
-    <!-- SHORTCUT -->
-    <link rel="shortcut icon" href="">
-
-    <!-- LINKS CSS -->
-    <link rel="stylesheet" href="">
-    <!-- TÍTULO DA PÁGINA -->
-    <title>APRENDENDO HTML</title>
+    <title>Site do Curso</title>
 </head>
 
-<!-- CONTEÚDO EXIBIDO PARA O USUÁRIO -->
-
 <body>
-    <h1> Os melhores e mais completos cursos de educação profissional do Brasil </h1>
-    <!-- <h2> h2 </h2>
-    <h3> h3 </h3>
-    <h4> h4 </h4>
-    <h5> h5 </h5> -->
-    <p>
-        <!-- MARCAÇÃO DE PARÁGRAFOS -->
-        A história da Rede Federal de Educação Profissional, Científica e Tecnológica começou em 1909, quando o então
-        Presidente da República, Nilo Peçanha, criou 19 escolas de Aprendizes e Artífices que, mais tarde, deram origem
-        aos
-        Centros Federais de Educação Profissional e Tecnológica (Cefets).
-    </p>
-    <p> Tida no seu início como instrumento de política voltado para as 'classes desprovidas', a Rede Federal se
-        configura
-        hoje como importante estrutura para que todas as pessoas tenham efetivo acesso às conquistas científicas e
-        tecnológicas.
-    </p>
+    <!-- Cabeçalho -->
+    <header>
+        <a href="#">
+            <img src="assets/img/ifto.svg" alt="logotipo do curso" title="logotipo do curso" width="500">
+        </a>
 
-    <p>Foi na década de 1980 que um novo cenário econômico e produtivo se estabeleceu, com o desenvolvimento de novas
-        tecnologias, agregadas à produção e à prestação de serviços. Para atender a essa demanda, as instituições de
-        educação profissional vêm buscando diversificar programas e cursos para elevar os níveis da qualidade da oferta.
-    </p>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#escola">Escola</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Fim cabeçalho -->
 
-    <p>Cobrindo todo o território nacional, a Rede Federal presta um serviço à nação, ao dar continuidade à sua missão
-        de
-        qualificar profissionais para os diversos setores da economia brasileira, realizar pesquisa e desenvolver novos
-        processos, produtos e serviços em colaboração com o setor produtivo.
-    </p>
+    <main>
+        <!-- chamada Principal -->
+        <article>
+            <header>
+                <h1>Aqui você aprende o essencial para trabalhar como webmaster fullstack</h1>
+                <p>
+                    Aqui você encontra os artigos necessários para auxiliar na sua caminhada na web
+                </p>
+                <p>
+                    Estude o HTML 5 e o CSS 3 na disciplina de webdesign
+                </p>
+                <p>
+                    <a href="#" class="btn">Saiba mais</a>
+                </p>
+            </header>
+        </article>
+        <!-- fim chamada principal -->
 
-    <p>Em 29 de dezembro de 2008 , 31 centros federais de educação tecnológica (Cefets), 75 unidades descentralizadas
-        de ensino (Uneds), 39 escolas agrotécnicas, 7 escolas técnicas federais e 8 escolas vinculadas a universidades
-        deixaram de existir para formar os Institutos Federais de Educação, Ciência e Tecnologia.
-    </p>
+        <!-- Artigos -->
+        <section>
+            <header>
+                <h1>
+                    Nossos útilmos artigos
+                </h1>
+            </header>
 
-    <a href="http://www.ifto.edu.br/araguaina" target="blank" title="Campus Araguaina" alt="Campus Araguaina">
-        Campus Araguaina
-    </a>
+            <?php for($i = 0; $i < 12; $i++): ?>
+            <article>
+                <a href="#">
+                    <img src="assets/img/rede_federal.png" alt="Rede Federal" title="Rede Federal">
+                </a>
+                <p>Categoria</p>
+                <h2>
+                    Voluptate repudiandae in praesentium dolore sunt aut eveniet nemo. Praesentium ipsa est provident
+                    eius veniam quod. Accusantium eos nulla est. Quam qui repudiandae quisquam quos et sint et. Sed nisi
+                    ratione et corporis repellat rerum saepe. Ut aut et sit nemo et pariatur.
+                </h2>
+            </article>
+            <?php endfor; ?>
 
-    <h2> Lista de Cursos no IFTO - Campus Araguaína </h2>
+        </section>
+        <!-- Fim artigos -->
 
-    <ul>
-        <li>Operador de Computador</li>
-        <li>Técnico em Biotecnologia</li>
-        <li>Técnico em Informática</li>
-        <li>Técnico em Análises Clínicas</li>
-        <li>Técnico em Enfermagem</li>
-        <li>Técnico em Informática para Internet</li>
-        <li>Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
-        <li>Gestão em Produção Industrial</li>
-        <li>Especialização Lato Sensu em Educação Ambiental e Desenvolvimento Sustentável</li>
-    </ul>
+        <!-- NEWS -->
+        <article>
+            <header>
+                <h1>Quer receber todas as novidades em seu e-mail?</h1>
+                <p>
+                    Informe seu nome e e-mail no campo ao lado e clique em OK !
+                </p>
+            </header>
 
-    <!-- <ol reversed> -->
-    <!-- <ol start='5'> -->
-    <!-- <ol type='I'> -->
-    <!-- <ol type='A'> -->
-    <ol type='a'>
-        <li>Operador de Computador</li>
-        <li>Técnico em Biotecnologia</li>
-        <li>Técnico em Informática</li>
+            <form action="" method="post"></form>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu email" required>
 
-        <ul>
-            <li>Programador WEB</li>
-        </ul>
+            <button type="submit">Enviar</button>
+        </article>
+        <!-- Fim NEWS -->
 
-        <li>Técnico em Análises Clínicas</li>
-        <li>Técnico em Enfermagem</li>
-        <li>Técnico em Informática para Internet</li>
-        <li>Tecnólogo em Análise e Desenvolvimento de Sistemas</li>
-        <li>Gestão em Produção Industrial</li>
-        <li>Especialização Lato Sensu em Educação Ambiental e Desenvolvimento Sustentável</li>
-    </ol>
-    <!-- SCRIPT JS -->
-    <script></script>
+        <!-- Sobre o curso -->
+        <section>
+            <header>
+                <img src="assets/img/logo.png" alt="Programador Web" title="Programador Web">
+                <h1>Curso de programação WEB</h1>
+                <p>
+                    Aprenda a trabalhar com HTML5 e CSS3 para desenvolver seus projetos e entregar página que estejam
+                    dentro dos padrões web seguindo boas práticas de programação
+                </p>
+            </header>
+
+            <article>
+                <header>
+                    <h2></h2>
+                </header>
+            </article>
+        </section>
+        <!-- Fim sobre o curso -->
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 
 </html>
